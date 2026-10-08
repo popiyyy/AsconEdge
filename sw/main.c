@@ -12,7 +12,6 @@ int main() {
     
     if (asconedge_init(FPGA_HPS_LW_BASE + ASCON_CORE_OFFSET) != 0) {
         printf("Failed to map FPGA memory. Run as root?\n");
-        printf("ponytail: Bypass init check for compilation test.\n");
     }
 
     uint8_t key[16]   = {0x01,0x23,0x45,0x67,0x89,0xab,0xcd,0xef, 0x01,0x23,0x45,0x67,0x89,0xab,0xcd,0xef};
